@@ -21,9 +21,12 @@ import { CustomersComponent } from './components/customers/customers.component';
 import { ListProductsComponent } from './components/list-products/list-products.component';
 import { TableModule } from 'primeng/table';
 import { ListCustomersComponent } from './components/list-customers/list-customers.component';
+import { SuppliersComponent } from './components/suppliers/suppliers.component';
+import { ListSuppliersComponent } from './components/list-suppliers/list-suppliers.component';
+
 
 @NgModule({
-  declarations: [AppComponent, ProductComponent, CustomersComponent, ListProductsComponent, ListCustomersComponent],
+  declarations: [AppComponent, ProductComponent, CustomersComponent, ListProductsComponent, ListCustomersComponent, SuppliersComponent, ListSuppliersComponent, ],
   imports: [BrowserModule,
             AppRoutingModule,
             ButtonModule,

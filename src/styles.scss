@@ -1,6 +1,6 @@
-/* You can add global styles to this file, and also import other style files */
 @import "primeng/resources/primeng.css";
-@import "primeng/resources/themes/lara-light-purple/theme.css";
+@import "primeng/resources/themes/lara-light-blue/theme.css";
+@import "primeicons/primeicons.css"; // Adicione esta linha
 
 body {
   background-color: #e4e2e2cb;
@@ -15,10 +15,7 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
-
-h2
-{
+h2 {
   color: #868686;
   font-family: 'Open Sans', sans-serif;
-
 }
