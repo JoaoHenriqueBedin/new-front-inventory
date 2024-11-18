@@ -1,0 +1,33 @@
+<div class="header pl-4 shadow-3">
+  <h2 class="">Cadastro de Produtos</h2>
+</div>
+
+<div class="card bg-green-900">
+  <p-toast></p-toast>
+</div>
+
+<div class="formgrid grid pl-3 p-3">
+  <div class="field col-12 md:col-6">
+      <label for="firstname6">Nome</label>
+      <input required="" id="firstname6" type="text" [(ngModel)]="value.name" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full">
+  </div>
+  <div class="field col-12 md:col-4">
+      <label for="lastname6">Preço</label>
+      <input required="" id="lastname6" type="text" [(ngModel)]="value.price" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full">
+  </div>
+  <div class="field col-10">
+      <label for="address">Descrição</label>
+      <textarea required="" id="address" type="text" rows="4" [(ngModel)]="value.description" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full"></textarea>
+  </div>
+  <div class="field col-12 md:col-5">
+      <label for="city">Quantidade Estoque </label>
+      <input required="" id="city" type="text" [(ngModel)]="value.stock" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full">
+  </div>
+  <div class="field col-12 md:col-5">
+      <label for="city">Imagem Produto</label>
+      <input required="" id="city" type="text" [(ngModel)]="value.imageURL" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full">
+  </div>
+  <div class="field col-12">
+      <p-button label="Cadastrar" (click)="createProduct()"></p-button>
+  </div>
+</div>
