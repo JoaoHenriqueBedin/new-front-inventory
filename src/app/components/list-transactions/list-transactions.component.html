@@ -1,0 +1,27 @@
+<div class="header pl-4 shadow-3">
+  <h2 class="">Listagem de Transações</h2>
+</div>
+
+<p-toast></p-toast>
+<p-table [value]="transactions" dataKey="id" [tableStyle]="{'min-width': '70rem'}">
+    <ng-template pTemplate="header">
+        <tr>
+            <th>ID</th>
+            <th>Produto</th>
+            <th>Quantidade</th>
+            <th>Tipo de Transação</th>
+            <th>Data da Transação</th>
+            <th>ID do Pedido</th>
+        </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-transaction>
+        <tr>
+            <td>{{transaction.id}}</td>
+            <td>{{transaction.product.name}}</td>
+            <td>{{transaction.quantity}}</td>
+            <td>{{transaction.transactionType}}</td>
+            <td>{{transaction.transactionDate | date:'short'}}</td>
+            <td>{{transaction.orderId}}</td>
+        </tr>
+    </ng-template>
+</p-table>

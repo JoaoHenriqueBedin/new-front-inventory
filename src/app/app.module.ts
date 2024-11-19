@@ -23,28 +23,47 @@ import { TableModule } from 'primeng/table';
 import { ListCustomersComponent } from './components/list-customers/list-customers.component';
 import { SuppliersComponent } from './components/suppliers/suppliers.component';
 import { ListSuppliersComponent } from './components/list-suppliers/list-suppliers.component';
+import { OrderComponent } from './components/orders/orders.component';
+import { ListOrdersComponent } from './components/list-orders/list-orders.component';
+import { TransactionComponent } from './components/transactions/transactions.component';
+import { ListTransactionsComponent } from './components/list-transactions/list-transactions.component';
+import { HomeComponent } from './components/home/home.component';
 
 
 @NgModule({
-  declarations: [AppComponent, ProductComponent, CustomersComponent, ListProductsComponent, ListCustomersComponent, SuppliersComponent, ListSuppliersComponent, ],
-  imports: [BrowserModule,
-            AppRoutingModule,
-            ButtonModule,
-            BrowserAnimationsModule,
-            CardModule,
-            InputTextModule,
-            InputTextareaModule,
-            InputMaskModule,
-            FormsModule,
-            InputNumberModule,
-            FileUploadModule,
-            ImageModule,
-            HttpClientModule,
-            ToastModule,
-            TabMenuModule,
-            TieredMenuModule,
-            TableModule
-          ],
+  declarations: [
+    AppComponent,
+    ProductComponent,
+    CustomersComponent,
+    ListProductsComponent,
+    ListCustomersComponent,
+    SuppliersComponent,
+    ListSuppliersComponent,
+    OrderComponent,
+    ListOrdersComponent,
+    TransactionComponent,
+    ListTransactionsComponent,
+    HomeComponent,
+  ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    ButtonModule,
+    BrowserAnimationsModule,
+    CardModule,
+    InputTextModule,
+    InputTextareaModule,
+    InputMaskModule,
+    FormsModule,
+    InputNumberModule,
+    FileUploadModule,
+    ImageModule,
+    HttpClientModule,
+    ToastModule,
+    TabMenuModule,
+    TieredMenuModule,
+    TableModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })

@@ -1,0 +1,33 @@
+<div class="header pl-4 shadow-3">
+  <h2 class="">Lançamento de Transações</h2>
+</div>
+
+<div class="card">
+  <p-toast></p-toast>
+</div>
+
+<div class="formgrid grid pl-3 p-3">
+  <div class="field col-12 md:col-6">
+      <label for="productId">ID do Produto</label>
+      <input required="" id="productId" type="number" [(ngModel)]="transaction.productId" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full">
+  </div>
+  <div class="field col-12 md:col-6">
+      <label for="quantity">Quantidade</label>
+      <input required="" id="quantity" type="number" [(ngModel)]="transaction.quantity" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full">
+  </div>
+  <div class="field col-12 md:col-6">
+      <label for="transactionType">Tipo de Transação</label>
+      <input required="" id="transactionType" type="text" [(ngModel)]="transaction.transactionType" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full">
+  </div>
+  <div class="field col-12 md:col-6">
+      <label for="transactionDate">Data da Transação</label>
+      <input required="" id="transactionDate" type="datetime-local" [(ngModel)]="transaction.transactionDate" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full">
+  </div>
+  <div class="field col-12 md:col-6">
+      <label for="orderId">ID do Pedido</label>
+      <input required="" id="orderId" type="number" [(ngModel)]="transaction.orderId" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full">
+  </div>
+  <div class="field col-12">
+      <p-button label="Cadastrar Transação" (click)="createTransaction()"></p-button>
+  </div>
+</div>

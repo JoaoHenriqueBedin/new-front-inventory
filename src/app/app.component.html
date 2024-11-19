@@ -1,7 +1,33 @@
-<!-- <app-product></app-product> -->
-<!-- <app-list-products></app-list-products> -->
-<!-- <app-customers></app-customers> -->
-<!-- <app-list-customers></app-list-customers> -->
- <app-suppliers></app-suppliers>
+ <!-- <app-product></app-product>
+<app-list-products></app-list-products>
+<app-customers></app-customers>
+<app-list-customers></app-list-customers>
+ <app-suppliers></app-suppliers> -->
 <!-- <app-list-suppliers></app-list-suppliers> -->
+<!-- <app-order></app-order> -->
+<!-- <app-list-orders></app-list-orders> -->
+<!-- <app-transaction></app-transaction>
+<app-list-transactions></app-list-transactions> -->
+<nav>
+  <ul>
+    <li><a routerLink="/">Home</a></li>
 
+    <li><a routerLink="/create-client">Cadastro Clientes</a></li>
+    <li><a routerLink="/clients">Clientes</a></li>
+
+    <li><a routerLink="/create-supplier">Cadastro Fornecedores</a></li>
+    <li><a routerLink="/suppliers">Fornecedores</a> </li>
+
+    <li><a routerLink="/create-products">Cadastro Produtos</a></li>
+    <li><a routerLink="/products">Produtos</a></li>
+
+    <li><a routerLink="/create-order">Lançamento Pedidos</a></li>
+    <li><a routerLink="/orders">Pedidos</a></li>
+
+    <li><a routerLink="/create-transaction">Lançamento Transação</a></li>
+    <li><a routerLink="/transactions">Transações</a></li>
+
+  </ul>
+</nav>
+
+<router-outlet></router-outlet>

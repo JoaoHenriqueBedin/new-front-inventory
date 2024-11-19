@@ -8,5 +8,10 @@ import { MenuItem } from 'primeng/api';
 })
 export class AppComponent{
 
-  title = 'front-invetory';
+    menuActive = false;
+
+    toggleMenu() {
+      this.menuActive = !this.menuActive;
+
+    }
 }
